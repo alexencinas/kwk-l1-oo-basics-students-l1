@@ -1,4 +1,7 @@
 class Book
+  
+  attr_accessor :title, :author, :page_count, :genre, :main_character
+  
   def initialize(title, author, page_count, genre)
     @title=title
     @author=author
@@ -6,37 +9,37 @@ class Book
     @genre=genre
   end 
   
-  def title
-    @title
-  end
+  # def title
+  #   @title
+  # end
   
-  def title=(title)
-    @title=title 
-  end 
+  # def title=(title)
+  #   @title=title 
+  # end 
   
-  def author
-    @author
-  end 
+  # def author
+  #   @author
+  # end 
   
-  def author=(author)
-    @author=author
-  end 
+  # def author=(author)
+  #   @author=author
+  # end 
   
-  def page_count
-    @page_count
-  end
+  # def page_count
+  #   @page_count
+  # end
   
-  def page_count=(page_count)
-    @page_count=page_count
-  end
+  # def page_count=(page_count)
+  #   @page_count=page_count
+  # end
   
-  def genre
-    @genre
-  end
+  # def genre
+  #   @genre
+  # end
   
-  def genre=(genre)
-    @genre=genre
-  end 
+  # def genre=(genre)
+  #   @genre=genre
+  # end 
   
 end
 
@@ -47,6 +50,8 @@ book3 = Book.new("Mockingjay", "Suzanne Collins", 340, "Science Fiction")
 puts book3.author
 book2.author = "JD Chan"
 puts book2.author
+book2.main_character = "Holden Caulfield"
 
+puts book2.main_character
 
 
