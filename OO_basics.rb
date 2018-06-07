@@ -45,7 +45,8 @@ book2 = Book.new("Catcher in the Rye", "JD Salinger", 102, "Literary Realism")
 book3 = Book.new("Mockingjay", "Suzanne Collins", 340, "Science Fiction")
 
 puts book3.author
-
+book2.author = "JD Chan"
+puts book2.author
 
 
 
